@@ -24,6 +24,13 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(
                 os.path.join(get_package_share_directory(
                     'airsim_ros_pkgs'), 'launch/position_controller_simple.launch.py')
+            ),
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(get_package_share_directory(
+                    'simple_drone_test'), 'launch/simple_drone_test.launch.py'
+                )
             )
         )
     ])

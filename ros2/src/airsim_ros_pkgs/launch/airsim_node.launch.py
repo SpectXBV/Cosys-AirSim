@@ -33,7 +33,7 @@ def generate_launch_description():
     
     enable_api_control = DeclareLaunchArgument(
         "enable_api_control",
-        default_value='False')
+        default_value='True')
     
     enable_object_transforms_list = DeclareLaunchArgument(
         "enable_object_transforms_list",
